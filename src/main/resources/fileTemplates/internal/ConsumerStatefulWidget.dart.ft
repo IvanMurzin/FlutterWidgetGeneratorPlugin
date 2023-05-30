@@ -1,0 +1,16 @@
+import 'package:flutter/material.dart';
+
+#parse("File Header.java")
+class ${WIDGETNAME} extends ConsumerStatefulWidget {
+    const ${WIDGETNAME}({Key? key}) : super(key: key);
+
+    @override
+    ConsumerState<${WIDGETNAME}> createState() => _${WIDGETNAME}State();
+}
+
+class _${WIDGETNAME}State extends ConsumerState<${WIDGETNAME}> {
+    @override
+    Widget build(BuildContext context) {
+        return ;
+    }
+}

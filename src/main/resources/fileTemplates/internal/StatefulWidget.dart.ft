@@ -1,0 +1,16 @@
+import 'package:flutter/material.dart';
+
+#parse("File Header.java")
+class ${WIDGETNAME} extends StatefulWidget {
+    const ${WIDGETNAME}({Key? key}) : super(key: key);
+
+    @override
+    State<${WIDGETNAME}> createState() => _${WIDGETNAME}State();
+}
+
+class _${WIDGETNAME}State extends State<${WIDGETNAME}> {
+    @override
+    Widget build(BuildContext context) {
+        return ;
+    }
+}

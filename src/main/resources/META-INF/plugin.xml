@@ -1,0 +1,23 @@
+<idea-plugin>
+    <id>ru.ivanmurzin.FlutterWidgetGenerator</id>
+    <name>FlutterWidgetGenerator</name>
+    <vendor email="ivanmurzin@gmail.com" url="https://github.com/IvanMurzin">IvanMurzin</vendor>
+    <description><![CDATA[
+    The Flutter Widget Generator plugin for Android Studio enhances your development workflow by automating the creation of widget template code for Flutter. It provides a convenient way to generate boilerplate code when creating a new file, allowing you to focus on implementing your Flutter UI quickly and efficiently.
+  ]]></description>
+    <depends>com.intellij.modules.platform</depends>
+
+
+    <extensions defaultExtensionNs="com.intellij">
+        <internalFileTemplate name="StatelessWidget"/>
+        <internalFileTemplate name="StatefulWidget"/>
+        <internalFileTemplate name="ConsumerWidget"/>
+        <internalFileTemplate name="ConsumerStatefulWidget"/>
+    </extensions>
+    <actions>
+        <action id="ru.ivanmurzin.flutterfiletemplates.CreateWidgetAction"
+                class="ru.ivanmurzin.flutterfiletemplates.CreateWidgetAction" text="create" description="o?">
+            <add-to-group group-id="NewGroup" anchor="first"/>
+        </action>
+    </actions>
+</idea-plugin>

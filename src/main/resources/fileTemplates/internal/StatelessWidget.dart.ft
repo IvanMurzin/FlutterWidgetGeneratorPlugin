@@ -1,0 +1,11 @@
+import 'package:flutter/material.dart';
+
+#parse("File Header.java")
+class ${WIDGETNAME} extends StatelessWidget {
+    const ${WIDGETNAME}({Key? key}) : super(key: key);
+
+    @override
+    Widget build(BuildContext context) {
+        return #[[$END$]]#;
+    }
+}
